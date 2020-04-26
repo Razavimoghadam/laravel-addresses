@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Rinvex\Addresses\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Artisan;
 
 class MigrateCommand extends Command
 {
@@ -46,5 +47,8 @@ class MigrateCommand extends Command
         }
 
         $this->line('');
+
+        Artisan::call('event:generate');
+        Artisan::call('rinvex:generate:model:addresses');
     }
 }

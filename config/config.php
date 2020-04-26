@@ -4,6 +4,13 @@ declare(strict_types=1);
 
 return [
 
+    /**
+     * Set the namespace of the Events.
+     */
+    'namespace' => [
+        'event' => 'App\Events',
+    ],
+
     // Manage autoload migrations
     'autoload_migrations' => true,
 

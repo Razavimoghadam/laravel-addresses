@@ -46,11 +46,20 @@
             "homepage": "https://github.com/rinvex/laravel-addresses/contributors"
         }
     ],
+    "editors": [
+        {
+            "name": "Mohsen Razavimoghadam",
+            "phone": "+98 938 4541 229",
+            "email": "mohsen.razavimoghadam@gmail.com"
+        }
+    ],
     "require": {
         "php": "^7.4.0",
         "illuminate/console": "^7.0.0",
         "illuminate/database": "^7.0.0",
         "illuminate/support": "^7.0.0",
+        "Illuminate/Config": "^7.0.0",
+        "Illuminate/Filesystem": "^7.0.0",
         "jackpopp/geodistance": "^1.2.0",
         "rinvex/laravel-cacheable": "^4.0.0",
         "rinvex/countries": "^7.0.0",

@@ -10,6 +10,7 @@ use Rinvex\Support\Traits\ConsoleTools;
 use Rinvex\Addresses\Console\Commands\MigrateCommand;
 use Rinvex\Addresses\Console\Commands\PublishCommand;
 use Rinvex\Addresses\Console\Commands\RollbackCommand;
+use Rinvex\Addresses\Console\Commands\GenerateAddress;
 
 class AddressesServiceProvider extends ServiceProvider
 {
@@ -24,6 +25,7 @@ class AddressesServiceProvider extends ServiceProvider
         MigrateCommand::class => 'command.rinvex.addresses.migrate',
         PublishCommand::class => 'command.rinvex.addresses.publish',
         RollbackCommand::class => 'command.rinvex.addresses.rollback',
+        GenerateAddress::class => 'command.rinvex.addresses.generate',
     ];
 
     /**
